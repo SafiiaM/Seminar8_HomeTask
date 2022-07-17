@@ -1,60 +1,77 @@
 ﻿// Задача 61. Вывести первые N строк треугольника Паскаля. Сделать вывод в виде равнобедренного
 // треугольника
 
-
-int row = 64;
-int[,] triangle = new int[row, row];
-const int cellWidth = 1;
-
-void FillTriangle()
+int InputLines(string input) // ввод строк 
 {
-    for (int i = 0; i < row; i++)
-    {
-        triangle[i, 0] = 1;
-        triangle[i, i] = 1;
-    }
-
-    for (int i = 2; i < row; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            triangle[i, j] = triangle[i - 1, j - 1] + triangle[i - 1, j];
-        }
-    }
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
 }
 
-void PrintTriangle()
+Console.WriteLine();
+
+void WriteArray(double[,] array) // заполнение массива 
 {
-    for (int i = 0; i < row; i++)
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        for (int j = 1; j < row; j++)
-        {
-            if (triangle[i, j] != 0)
-                Console.Write($"{triangle[i, j],cellWidth}");
-        }
-        Console.WriteLine();
+      if (array[i, j] != 0)
+      {
+          Console.Write($"{array[i, j]} ");
+      }
+      else Console.Write("  ");
     }
+    Console.WriteLine();
+  }
 }
 
-void Magic()
+void FillPascalTriangle(double[,] pascalTriangle) // заполнение треугольника Паскаля
 {
-    int col = cellWidth * row;
-    for (int i = 0; i < row; i++)
+  for (int p = 0; p < pascalTriangle.GetLength(0); p++)
+  {
+    pascalTriangle[p, 0] = 1;
+  }
+  for (int i = 1; i < pascalTriangle.GetLength(0); i++)
+  {
+    for (int j = 1; j < i + 1; j++)
     {
-        for (int j = 0; j <= i; j++)
-        {
-            Console.SetCursorPosition(col, i + 1);
-            //if(triangle[i, j] !=0) Console.Write($"{triangle[i,j],cellWidth}");
-            if (triangle[i, j] % 2 != 0) Console.Write("*");
-            col += cellWidth * 2;
-        }
-        col = cellWidth * row - cellWidth * (i + 1);
-        Console.WriteLine();
+      pascalTriangle[i, j] = pascalTriangle[i - 1, j] + pascalTriangle[i - 1, j - 1];
     }
-
+  }
 }
-Console.ReadLine();
-FillTriangle();
-PrintTriangle();
-Console.ReadLine();
-Magic();
+
+void TransformationPascalTriangle(double[,] array) // трансформация треугольника Паскаля
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    int count = 0;
+    for (int j = array.GetLength(1) - 1; j >= 0; j--)
+    {
+      if (array[i, j] != 0)
+      {
+        array[i, array.GetLength(1) / 2 + j - count] = array[i, j];
+        array[i, j] = 0;
+        count++;
+      }
+    }
+  }
+  array[array.GetLength(0) - 1, 0] = 1;
+}
+
+
+
+int n = InputLines("Введите количество строк: ");
+
+double[,] pascalTriangle = new double[n + 1, 2 * n + 1];
+
+FillPascalTriangle(pascalTriangle);
+
+Console.WriteLine();
+WriteArray(pascalTriangle);
+
+TransformationPascalTriangle(pascalTriangle);
+
+Console.WriteLine();
+WriteArray(pascalTriangle);
+
