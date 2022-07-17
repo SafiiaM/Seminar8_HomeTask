@@ -24,16 +24,16 @@ void PrintArray(int[,] arr)
     }
 }
 
-int n = 4;
 int m = 5;
-int[,] array = new int[n, m];
+int n = 4;
+int[,] array = new int[m, n];
 
 CreateArray(array);
 PrintArray(array);
 Console.WriteLine();
 
 
-int[,] dictionary = new int[n * m, 2];
+int[,] dictionary = new int[m * n, 2];
 int k = 0;
 
 bool exist = false;
