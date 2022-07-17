@@ -1,0 +1,15 @@
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\bin\Debug\net6.0\Task58.exe
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\bin\Debug\net6.0\Task58.deps.json
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\bin\Debug\net6.0\Task58.runtimeconfig.json
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\bin\Debug\net6.0\Task58.dll
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\bin\Debug\net6.0\Task58.pdb
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.csproj.AssemblyReference.cache
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.GeneratedMSBuildEditorConfig.editorconfig
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.AssemblyInfoInputs.cache
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.AssemblyInfo.cs
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.csproj.CoreCompileInputs.cache
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.dll
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\refint\Task58.dll
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.pdb
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\Task58.genruntimeconfig.cache
+D:\Business Analyst\Знакомство с языками программирования\C#\Seminar8_HomeTask\Task58\obj\Debug\net6.0\ref\Task58.dll
